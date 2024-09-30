@@ -2,6 +2,76 @@ body {
   font-family: Montserrat;
 }
 
+.header__container {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-43deg, #2f2f2f, #202020);
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  grid-gap: 45px;
+  height: 100%;
+}
+
+.header-nav li a {
+  height: 100%;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #dadada;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.25s;
+}
+
+.underline-one {
+  color: #00bfff;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  transition: width 0.5s;
+}
+.underline-one:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(100, 99, 99);
+  transition: width 0.5s;
+}
+
+.underline-one:hover {
+  color: rgb(230, 216, 181);
+  transition: width 0.5s;
+}
+
+.underline-one:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: rgb(226, 224, 224);
+  transition: width 0.5s;
+}
+
 .section__header {
   background: linear-gradient(-43deg, #2f2f2f, #202020);
   border-bottom-right-radius: 168px;
@@ -159,6 +229,41 @@ body {
 
 .section__infoblock img {
   margin-right: 15px;
+}
+
+@media screen and (max-width: 320px) {
+  .header__container {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-43deg, #2f2f2f, #202020);
+  }
+
+  .header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .header-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+    height: 100%;
+  }
+
+  .header-nav li a {
+    height: 100%;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #dadada;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.25s;
+  }
 }
 
 @media screen and (max-width: 320px) {
