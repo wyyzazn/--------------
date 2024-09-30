@@ -231,6 +231,10 @@ body {
   margin-right: 15px;
 }
 
+.section__text {
+  background: hsla(0, 0%, 100%, 0.04);
+}
+
 @media screen and (max-width: 320px) {
   .header__container {
     height: 40px;
